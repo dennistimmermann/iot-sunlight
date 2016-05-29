@@ -138,7 +138,7 @@ void loop() {
     int p = constrain(f*100.0, 0, 100);
 //    Serial.println(p);
 
-    if(currentMillis - previousMillis >= 1000) {
+    if(currentMillis - previousMillis >= 1000*60*5) {
       previousMillis = currentMillis; 
       Serial.println("refreshing sunset times");
       Serial.println(p);
