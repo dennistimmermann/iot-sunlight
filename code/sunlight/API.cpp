@@ -22,7 +22,7 @@ size_t API::parseTime(String t) {
 }
 
 int API::getTimezone(String t) {
-  int add = t.substring(18,20).toInt();
+  int add = t.substring(20,22).toInt();
   if(t[19] == '-') {
     add = add *-1;
   }
